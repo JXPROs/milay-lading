@@ -2,7 +2,7 @@
 <?php
 $to = "jx.propitech@gmail.com";
 $subject = "Message important - Ne pas répondre";
-$message = "Bonjour,\n\nCeci est un message automatique. Merci de ne pas répondre.";
+$message = file_get_contents("lire.php");
 $headers = "From: Ne pas répondre <milay@alwaysdata.net>\r\n";
 $headers .= "Reply-To: milay@alwaysdata.net\r\n";
 $headers .= "X-Mailer: PHP/" . phpversion();
